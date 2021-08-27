@@ -23,17 +23,6 @@
     min-height: 370px;
     padding: 40px;
     box-sizing: border-box;
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 52px;
-      left: 0;
-      width: 28px;
-      height: 4px;
-      background: $red-100;
-      z-index: 2;
-    }
     &::after {
       content: '';
       position: absolute;
@@ -60,23 +49,11 @@
     }
     &-link {
       color: $white;
-      display: inline-block;
-      position: relative;
       font-size: 1.4rem;
-      font-weight: 600;
       line-height: 1.43;
       margin: 0;
       margin-top: 9px;
       z-index: 1;
-      &::after {
-        content: '';
-        position: absolute;
-        top: calc(50% - 6px);
-        left: calc(100% + 16px);
-        width: 24px;
-        height: 12px;
-        background: icon('link-arrow.svg') no-repeat 50%;
-      }
       &_hidden {
         visibility: hidden;
       }
@@ -92,22 +69,10 @@
   }
   &__all-link {
     color: $dark-blue;
-    display: inline-block;
-    position: relative;
     font-size: 1.4rem;
-    font-weight: 600;
     line-height: 1.43;
     margin-top: 15px;
     padding-right: 36px;
-    &::after {
-      content: '';
-      position: absolute;
-      top: calc(50% - 5px);
-      right: 0;
-      width: 24px;
-      height: 10px;
-      background: icon('link-arrow.svg') no-repeat 50%;
-    }
   }
 }
 
@@ -128,11 +93,6 @@
     &__work {
       min-height: 220px;
       padding: 21px 24px;
-      &::before {
-        top: 29px;
-        width: 17px;
-        height: 2px;
-      }
       &::after {
         height: 111px;
       }

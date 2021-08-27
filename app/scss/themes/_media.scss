@@ -3,9 +3,25 @@
 }
 
 @media screen and (max-width: 767px) {
-
+  .r-block {
+    &::before {
+      top: 29px;
+      width: 17px;
+      height: 2px;
+    }
+    &.price-item {
+      &::before {
+        width: 20px;
+        height: 4px;
+        top: 34px;
+      }
+    }
+  }
+  .more-link {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  
+
 }
