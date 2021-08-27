@@ -3802,29 +3802,6 @@ a {
     color: #FFF;
     margin-bottom: 51px;
     max-width: 720px; }
-  .home-main__list {
-    margin-bottom: 28px; }
-  .home-main__item {
-    position: relative;
-    color: #FFF;
-    font-size: 1.4rem;
-    line-height: 1.36;
-    font-weight: 500;
-    margin-bottom: 22px;
-    padding-left: 29px;
-    max-width: 200px;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box; }
-    .home-main__item:last-child {
-      margin-bottom: 0; }
-    .home-main__item::before {
-      content: '';
-      position: absolute;
-      top: 2px;
-      left: 0;
-      width: 18px;
-      height: 18px;
-      background: url("../img/icons/swush.svg") no-repeat 50%; }
   .home-main__btn {
     font-weight: 700; }
 
@@ -3834,4 +3811,13 @@ a {
     background: -o-linear-gradient(rgba(30, 54, 62, 0.75) 0%, rgba(30, 54, 62, 0.75) 100%), url("../img/m-home-main-bg.jpg") no-repeat 50%/cover;
     background: linear-gradient(rgba(30, 54, 62, 0.75) 0%, rgba(30, 54, 62, 0.75) 100%), url("../img/m-home-main-bg.jpg") no-repeat 50%/cover;
     padding: 35px 0;
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+    .home-main__title {
+      font-size: 2.2rem;
+      line-height: 1.45;
+      max-width: 400px;
+      margin-bottom: 26px; }
+    .home-main__note {
+      font-size: 1.4rem;
+      margin-bottom: 33px;
+      line-height: 1.57; } }
