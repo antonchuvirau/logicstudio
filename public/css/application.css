@@ -3868,6 +3868,8 @@ a {
         width: 24px;
         height: 12px;
         background: url("../img/icons/link-arrow.svg") no-repeat 50%; }
+      .our-works__work-link_hidden {
+        visibility: hidden; }
   .our-works__item:nth-child(2n) {
     margin-bottom: 40px; }
   .our-works__item:last-child {
