@@ -14,3 +14,10 @@
     text-transform: uppercase;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 1.3rem;
+    padding: 1.3em 3.3em;
+  }
+}
