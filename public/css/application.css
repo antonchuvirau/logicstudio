@@ -3783,9 +3783,137 @@ a {
     font-size: 2.2rem;
     line-height: 1.14; }
 
+@media screen and (max-width: 767px) {
+  .title_size-l {
+    font-size: 2.2rem;
+    line-height: 1.45; }
+  .title_size-m {
+    font-size: 2rem;
+    line-height: 1.2; }
+  .title_size-s {
+    font-size: 1.5rem;
+    line-height: .93; } }
+
 .our-works {
   padding: 49px 0;
   padding-bottom: 65px; }
+  .our-works__title {
+    color: #233F48; }
+  .our-works__note {
+    margin-top: 18px;
+    margin-bottom: 40px;
+    font-size: 1.8rem; }
+    .our-works__note span {
+      font-size: 2rem;
+      line-height: 1.5;
+      font-weight: 700; }
+  .our-works__work {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 6px;
+    min-height: 370px;
+    padding: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative; }
+    .our-works__work::before {
+      content: '';
+      position: absolute;
+      top: 52px;
+      left: 0;
+      width: 28px;
+      height: 4px;
+      background: #FF033E;
+      z-index: 2; }
+    .our-works__work::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 185px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), color-stop(60%, rgba(0, 0, 0, 0)));
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
+      border-radius: 6px; }
+    .our-works__work-title {
+      text-transform: uppercase;
+      color: #FFF;
+      position: relative;
+      z-index: 1; }
+    .our-works__work-note {
+      color: #FFF;
+      font-size: 1.6rem;
+      margin: 0;
+      margin-top: 15px;
+      position: relative;
+      z-index: 1; }
+    .our-works__work-link {
+      color: #FFF;
+      display: inline-block;
+      position: relative;
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 1.43;
+      margin: 0;
+      margin-top: 9px;
+      z-index: 1; }
+      .our-works__work-link::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 6px);
+        left: calc(100% + 16px);
+        width: 24px;
+        height: 12px;
+        background: url("../img/icons/link-arrow.svg") no-repeat 50%; }
+  .our-works__item:nth-child(2n) {
+    margin-bottom: 40px; }
+  .our-works__item:last-child {
+    margin-bottom: 0; }
+  .our-works__all-link {
+    color: #214D5D;
+    display: inline-block;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.43;
+    margin-top: 15px;
+    padding-right: 36px; }
+    .our-works__all-link::after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 5px);
+      right: 0;
+      width: 24px;
+      height: 10px;
+      background: url("../img/icons/link-arrow.svg") no-repeat 50%; }
+
+@media screen and (max-width: 767px) {
+  .our-works {
+    padding: 26px 0;
+    padding-bottom: 30px; }
+    .our-works__note {
+      font-size: 1.3rem;
+      line-height: 1.54;
+      margin-top: 13px;
+      margin-bottom: 20px; }
+      .our-works__note span {
+        font-size: 1.6rem;
+        line-height: 1.25; }
+    .our-works__work {
+      min-height: 220px;
+      padding: 21px 24px; }
+      .our-works__work::before {
+        top: 29px;
+        width: 17px;
+        height: 2px; }
+      .our-works__work::after {
+        height: 111px; }
+      .our-works__work-note {
+        font-size: 1.3rem;
+        line-height: 1.54; } }
 
 .home-main {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 54, 62, 0.75)), to(rgba(30, 54, 62, 0.75))), url("../img/home-main-bg.jpg") no-repeat 50%;
@@ -3813,8 +3941,6 @@ a {
     padding: 35px 0;
     padding-bottom: 40px; }
     .home-main__title {
-      font-size: 2.2rem;
-      line-height: 1.45;
       max-width: 400px;
       margin-bottom: 26px; }
     .home-main__note {
