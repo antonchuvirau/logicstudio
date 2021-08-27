@@ -57,7 +57,9 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/title',
+  'components/our-works';
 
 // 6. Page-specific styles
 @import
@@ -65,4 +67,5 @@
 
 // 7. Themes
 @import
-  'themes/default';
+  'themes/default',
+  'themes/media';

@@ -1,0 +1,26 @@
+.header {
+  padding: 34px 0;
+  &__phone {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: auto;
+  }
+  &__menu {
+    margin-left: 49px;
+    @include flex();
+    &-text {
+      margin-left: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    &__menu {
+      margin-left: 0;
+      &__text {
+        margin: 0;
+      }
+    }
+  }
+}
