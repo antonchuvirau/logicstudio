@@ -13,6 +13,7 @@
   &__logo {
     height: 100%;
     @include flex(row, center);
+    margin-right: auto;
     &:hover {
       & svg path {
         fill: $black;

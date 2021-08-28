@@ -64,12 +64,14 @@
   'components/price',
   'components/website-order',
   'components/advantages',
-  'components/menu';
+  'components/menu',
+  'components/development-main';
 
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/portfolio';
+  'pages/portfolio',
+  'pages/development';
 
 // 7. Themes
 @import
