@@ -90,6 +90,12 @@
         line-height: 1.25;
       }
     }
+    &__item {
+      margin-bottom: 40px;
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
     &__work {
       min-height: 220px;
       padding: 21px 24px;

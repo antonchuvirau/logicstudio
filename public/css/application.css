@@ -3669,7 +3669,8 @@ a {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 10; }
+  z-index: 10;
+  border-bottom: 1px solid #E9EDEE; }
   .header__phone {
     font-size: 1.8rem;
     font-weight: 600;
@@ -3906,11 +3907,14 @@ a {
   border-radius: 36px;
   border: 2px solid #FF033E;
   color: #214D5D;
-  padding: 1.28em 3.11em;
+  padding: .89em 3.11em;
   font-weight: 700;
   font-size: 1.8rem;
-  line-height: 1.25; }
+  line-height: 1.25;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .btn-submit {
+    padding: 1.28em 3.11em;
     background: #FF033E;
     color: #FFF;
     font-weight: 600;
@@ -4028,6 +4032,10 @@ a {
       .our-works__note span {
         font-size: 1.6rem;
         line-height: 1.25; }
+    .our-works__item {
+      margin-bottom: 40px; }
+      .our-works__item:nth-child(4) {
+        margin-bottom: 0; }
     .our-works__work {
       min-height: 220px;
       padding: 21px 24px; }
@@ -4377,6 +4385,21 @@ a {
       font-size: 1.4rem;
       margin-bottom: 33px;
       line-height: 1.57; } }
+
+.portfolio {
+  padding: 40px 0; }
+  .portfolio__title {
+    margin-bottom: 36px; }
+  .portfolio__show {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+@media screen and (max-width: 767px) {
+  .portfolio__show {
+    margin-top: 40px; } }
 
 .r-block {
   position: relative; }

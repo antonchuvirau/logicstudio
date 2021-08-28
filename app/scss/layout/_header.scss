@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   z-index: 10;
+  border-bottom: 1px solid $gray-200;
   &__phone {
     font-size: 1.8rem;
     font-weight: 600;

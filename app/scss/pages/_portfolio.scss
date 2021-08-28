@@ -1,0 +1,19 @@
+.portfolio {
+  padding: 40px 0;
+  &__title {
+    margin-bottom: 36px;
+  }
+  &__show {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio {
+    &__show {
+      margin-top: 40px;
+    }
+  }
+}

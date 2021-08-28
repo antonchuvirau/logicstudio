@@ -2,11 +2,13 @@
   border-radius: 36px;
   border: 2px solid $red-100;
   color: $dark-blue;
-  padding: 1.28em 3.11em;
+  padding: .89em 3.11em;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.25;
+  box-sizing: border-box;
   &-submit {
+    padding: 1.28em 3.11em;
     background: $red-100;
     color: $white;
     font-weight: 600;
