@@ -1,0 +1,59 @@
+.about-specialization {
+  padding: 52px 0;
+  padding-bottom: 57px;
+  background: 
+    linear-gradient(-30deg, rgba($dark-100, .75) 0%, rgba($dark-blue, .75) 100%), 
+    image('home-main-bg.jpg') no-repeat 50%/cover;
+  &__header {
+    color: $white;
+    margin-bottom: 25px;
+  }
+  &__note {
+    color: $gray-300;
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: auto;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &_bold {
+      font-weight: 700;
+    }
+  }
+  &__flex-item {
+    @include flex(column);
+  }
+  &__submit {
+    &-wrapper {
+      margin-top: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about-specialization {
+    &__header {
+      margin-bottom: 10px;
+    }
+    &__flex-item {
+      margin-top: 25px;
+    }
+    &__submit-wrapper {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-specialization {
+    background: 
+      linear-gradient(-30deg, rgba($dark-100, .75) 0%, rgba($dark-blue, .75) 100%), 
+      image('m-home-main-bg.jpg') no-repeat 50%/cover;
+      padding: 35px 0;
+      padding-bottom: 40px;
+    &__note {
+      font-size: 1.3rem;
+      line-height: 1.54;
+    }
+  }
+}

@@ -3,9 +3,10 @@
   padding-bottom: 65px;
   &__title {
     color: $dark-200;
+    margin-bottom: 18px;
   }
   &__note {
-    margin-top: 18px;
+    margin: 0;
     margin-bottom: 40px;
     font-size: 1.8rem;
     & span {
@@ -13,6 +14,9 @@
       line-height: 1.5;
       font-weight: 700;
     }
+  }
+  &__arrow-wrapper {
+    @include flex(row, flex-start, flex-end);
   }
   &__work {
     display: block;
@@ -80,10 +84,12 @@
   .our-works {
     padding: 26px 0;
     padding-bottom: 30px;
+    &__title {
+      margin-top: 13px;
+    }
     &__note {
       font-size: 1.3rem;
       line-height: 1.54;
-      margin-top: 13px;
       margin-bottom: 20px;
       & span {
         font-size: 1.6rem;
