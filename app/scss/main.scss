@@ -66,13 +66,15 @@
   'components/advantages',
   'components/menu',
   'components/development-main',
-  'components/stages';
+  'components/stages',
+  'components/about-advantages';
 
 // 6. Page-specific styles
 @import
   'pages/home',
   'pages/portfolio',
-  'pages/development';
+  'pages/development',
+  'pages/about';
 
 // 7. Themes
 @import
