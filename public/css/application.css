@@ -4463,12 +4463,52 @@ a {
 
 .stages {
   padding: 54px 0;
-  padding-bottom: 42px; }
+  padding-bottom: 28px; }
   .stages__title {
     margin-bottom: 25px; }
   .stages__note {
     margin: 0;
     font-size: 1.8rem; }
+  .stages__list {
+    margin-top: 20px; }
+  .stages__item {
+    border-radius: 6px;
+    margin-bottom: 32px; }
+    .stages__item-number {
+      color: #FF033E;
+      margin: 0;
+      line-height: 1.25; }
+    .stages__item-title {
+      font-weight: 600;
+      color: #1E363E;
+      margin-bottom: 23px; }
+    .stages__item-text {
+      font-size: 1.6rem;
+      margin: 0; }
+
+@media screen and (max-width: 767px) {
+  .stages {
+    padding: 34px 0; }
+    .stages__title {
+      margin-bottom: 15px; }
+    .stages__note {
+      font-size: 1.3rem;
+      line-height: 1.54; }
+    .stages__list {
+      margin-top: 15px; }
+    .stages__item {
+      margin-bottom: 15px; }
+      .stages__item_last {
+        margin-bottom: 0; }
+      .stages__item-number {
+        font-size: 3rem;
+        line-height: 1.4; }
+      .stages__item-title {
+        font-size: 1.7rem;
+        margin-bottom: 15px; }
+      .stages__item-text {
+        font-size: 1.3rem;
+        line-height: 1.54; } }
 
 .home-main {
   background: -o-linear-gradient(120deg, rgba(30, 54, 62, 0.75) 0%, rgba(33, 77, 93, 0.75) 100%), url("../img/home-main-bg.jpg") no-repeat 50%;
