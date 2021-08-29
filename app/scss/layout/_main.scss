@@ -1,5 +1,10 @@
 .main {
   margin-top: 90px;
+  &-header {
+    font-weight: 700;
+    padding: 38px 0;
+    color: $dark-200;
+  }
 }
 
 @media screen and (max-width: 576px) {

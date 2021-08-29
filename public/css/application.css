@@ -3899,6 +3899,10 @@ a {
 
 .main {
   margin-top: 90px; }
+  .main-header {
+    font-weight: 700;
+    padding: 38px 0;
+    color: #233F48; }
 
 @media screen and (max-width: 576px) {
   .main {
@@ -4728,10 +4732,23 @@ a {
   .development .price-item__wrapper:nth-child(6) {
     margin-bottom: 0; } }
 
-.about__header {
-  font-weight: 700;
-  padding: 38px 0;
-  color: #233F48; }
+.contacts-order__submit {
+  padding: 1.28em 4.6em; }
+  .contacts-order__submit-wrapper {
+    margin-top: 50px; }
+
+.contacts-order__contacts, .contacts-order__hours {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.62;
+  margin: 0; }
+
+.contacts-order__hours {
+  margin-top: 28px; }
+
+@media screen and (max-width: 576px) {
+  .contacts-order__submit-wrapper {
+    margin-top: 30px; } }
 
 .r-block {
   position: relative; }
