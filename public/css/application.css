@@ -4746,6 +4746,9 @@ a {
 .contacts-order__hours {
   margin-top: 28px; }
 
+.contacts-map__iframe {
+  border: none; }
+
 @media screen and (max-width: 576px) {
   .contacts-order__submit-wrapper {
     margin-top: 30px; } }

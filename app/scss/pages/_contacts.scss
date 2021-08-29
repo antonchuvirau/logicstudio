@@ -17,6 +17,11 @@
       margin-top: 28px;
     }
   }
+  &-map {
+    &__iframe {
+      border: none;
+    }
+  }
 }
 
 
