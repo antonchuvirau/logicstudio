@@ -4707,7 +4707,8 @@ a {
 .portfolio {
   padding: 40px 0; }
   .portfolio__title {
-    margin-bottom: 36px; }
+    margin-bottom: 36px;
+    font-weight: 700; }
   .portfolio__show {
     position: relative;
     left: 50%;
