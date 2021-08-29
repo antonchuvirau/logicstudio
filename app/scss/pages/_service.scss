@@ -1,10 +1,5 @@
-.development {
+.service {
   & .price {
-    padding-bottom: 20px;
-    &__title {
-      margin-bottom: 25px;
-      line-height: 1.35;
-    }
     &-item {
       &__wrapper {
         margin-bottom: 40px;
@@ -13,35 +8,42 @@
         margin-bottom: 0;
       }
     }
+    &__title {
+      margin-bottom: 25px;
+      line-height: 1.35;
+    }
+    &__note {
+      min-width: 735px;
+    }
+  }
+  & .website-order {
+    &__title {
+      margin-top: 34px;
+    }
   }
 }
 
 @media screen and (max-width: 992px) {
-  .development {
-    & .price {
-      padding-bottom: 34px;
-      &-item {
-        &__wrapper:nth-child(5),
-        &__wrapper:nth-child(6) {
-          margin-bottom: 0;
-        }
+  .service {
+    & .price__note {
+      min-width: auto;
+    }
+    & .price-item__wrapper {
+      &:nth-child(5),
+      &:nth-child(6) {
+        margin-bottom: 0;
       }
     }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .development {
+  .service {
     & .price {
-      &-item {
-        &__wrapper {
+      &-item__wrapper {
+        margin-bottom: 20px;
+        &:nth-child(5) {
           margin-bottom: 20px;
-          &:nth-child(5) {
-            margin-bottom: 20px;
-          }
-          &:nth-child(6) {
-            margin-bottom: 0;
-          }
         }
       }
       &__title {
