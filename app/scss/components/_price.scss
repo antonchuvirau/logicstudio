@@ -5,11 +5,24 @@
   &__title {
     margin-bottom: 34px;
   }
+  &__services {
+    &-wrapper {
+      @include flex(row, flex-start, flex-end);
+    }
+  }
+  &__note {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  &__development {
+    margin-bottom: 42px;
+  }
   &-item {
     display: block;
     background: $white;
     padding: 34px 25px 28px 41px;
     border-radius: 6px;
+    box-sizing: border-box;
     &__title {
       font-weight: 600;
       color: $dark-100;

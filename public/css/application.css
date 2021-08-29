@@ -3921,6 +3921,18 @@ a {
     font-weight: 600;
     border: none;
     text-transform: uppercase; }
+  .btn-arrow {
+    padding-right: 4em;
+    padding-left: 1.77em;
+    position: relative; }
+    .btn-arrow::after {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 14px;
+      top: calc(50% - 7px);
+      right: 31px;
+      background: url("../img/icons/link-arrow.svg") no-repeat center; }
 
 @media screen and (max-width: 767px) {
   .btn {
@@ -4052,11 +4064,34 @@ a {
   padding-bottom: 60px; }
   .price__title {
     margin-bottom: 34px; }
+  .price__services-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+  .price__note {
+    font-size: 1.8rem;
+    margin: 0; }
+  .price__development {
+    margin-bottom: 42px; }
   .price-item {
     display: block;
     background: #FFF;
     padding: 34px 25px 28px 41px;
-    border-radius: 6px; }
+    border-radius: 6px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     .price-item__title {
       font-weight: 600;
       color: #1E363E; }
@@ -4472,6 +4507,27 @@ a {
 @media screen and (max-width: 767px) {
   .portfolio__show {
     margin-top: 40px; } }
+
+.development .price {
+  padding-bottom: 20px; }
+  .development .price__title {
+    margin-bottom: 25px; }
+  .development .price-item__wrapper {
+    margin-bottom: 40px; }
+  .development .price-item__price {
+    margin-bottom: 0; }
+
+@media screen and (max-width: 992px) {
+  .development .price {
+    padding-bottom: 34px; }
+    .development .price-item__wrapper:nth-child(5), .development .price-item__wrapper:nth-child(6) {
+      margin-bottom: 0; } }
+
+@media screen and (max-width: 767px) {
+  .development .price-item__wrapper:nth-child(5) {
+    margin-bottom: 40px; }
+  .development .price-item__wrapper:nth-child(6) {
+    margin-bottom: 0; } }
 
 .r-block {
   position: relative; }

@@ -15,6 +15,20 @@
     border: none;
     text-transform: uppercase;
   }
+  &-arrow {
+    padding-right: 4em;
+    padding-left: 1.77em;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 14px;
+      top: calc(50% - 7px);
+      right: 31px;
+      background: icon('link-arrow.svg') no-repeat center;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
