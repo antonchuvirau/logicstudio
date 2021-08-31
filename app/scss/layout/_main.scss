@@ -1,0 +1,23 @@
+.main {
+  margin-top: 90px;
+  & .main-header {
+    font-weight: 700;
+    padding: 38px 0;
+    color: $dark-200;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    & .main-header {
+      padding: 25px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    margin-top: 50px;
+  }
+}

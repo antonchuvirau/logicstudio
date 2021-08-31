@@ -1,0 +1,150 @@
+.footer {
+	border-top: 1px solid $gray-200;
+  &__top {
+		padding: 60px 0;
+		padding-bottom: 70px;
+  }
+  &__bottom {
+		padding: 33px 0;
+		border-top: 1px solid $gray-200;
+  }
+	&__note {
+		margin: 0;
+		margin-top: 32px;
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: $dark-100;
+	}
+  &__text {
+		margin: 0;
+		font-size: 1.6rem;
+		line-height: 1.65;
+		text-align: left;
+  }
+  &__link {
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		font-size: 1.4rem;
+		line-height: 1.3;
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0;
+		}
+  }
+  &__info {
+		&-text {
+			margin: 0;
+			font-size: 1.6rem;
+			line-height: 1.62;
+			margin: 0;
+		}
+		&-download {
+			display: inline-block;
+			margin-top: 35px;
+			padding-left: 50px;
+			font-size: 1.6rem;
+			font-weight: 600;
+			color: $dark-100;
+			text-decoration: underline;
+			position: relative;
+			&:hover {
+				text-decoration: none;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: 3px;
+				left: 0;
+				width: 34px;
+				height: 44px;
+				background: icon('word-icon.svg') no-repeat 50%;
+			}
+		}
+  }
+  &__testimonials {
+    margin-top: 40px;
+  }
+  &-menu {
+		@include flex(row);
+		&__col {
+			@include flex(column);
+			margin-right: 40px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&__item {
+			margin-bottom: 20px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&_visibility {
+				&-hidden {
+					display: none;
+				}
+			}
+		}
+		&__link {
+			display: inline-block;
+			color: $dark-100;
+			text-decoration: underline;
+			font-size: 1.6rem;
+			line-height: 1.62;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+  }
+}
+
+@media screen and (max-width: 767px) {
+	.footer {
+		&__top {
+			padding: 0;
+			padding-top: 35px;
+		}
+		&__note {
+			margin: 15px 0;
+		}
+		&__info {
+			padding-bottom: 35px;
+			border-bottom: 1px solid $gray-200;
+			&-download {
+				margin-top: 28px;
+			}
+		}
+		&-menu {
+			padding-top: 25px;
+			padding-bottom: 32px;
+		}
+		&__bottom {
+			padding: 25px 0;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.footer {
+		&__note,
+		&__info-text,
+		&__info-download {
+			font-size: 1.3rem;
+			line-height: 1.54;
+		}
+		&__info-download::before {
+			top: calc(50% - 22px);
+		}
+		&-menu {
+			&__link {
+				font-size: 1.4rem;
+			}
+			&__item {
+				margin-bottom: 15px;
+			}
+		}
+		&__text {
+			font-size: 1.2rem;
+		}
+	}
+}

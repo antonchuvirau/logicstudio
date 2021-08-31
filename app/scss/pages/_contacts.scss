@@ -1,0 +1,36 @@
+.contacts {
+  &-order {
+    &__submit {
+      padding: 1.28em 4.6em;
+      &-wrapper {
+        margin-top: 50px;
+      }
+    }
+    &__contacts,
+    &__hours {
+      margin: 0;
+      font-size: 1.6rem;
+			line-height: 1.62;
+			margin: 0;
+    }
+    &__hours {
+      margin-top: 28px;
+    }
+  }
+  &-map {
+    &__iframe {
+      border: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  .contacts {
+    &-order {
+      &__submit-wrapper {
+        margin-top: 30px;
+      }
+    }
+  }
+}

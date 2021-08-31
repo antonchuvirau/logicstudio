@@ -1,0 +1,47 @@
+.home {
+  &-main {
+    background: 
+      linear-gradient(-30deg, rgba($dark-100, .75) 0%, rgba($dark-blue, .75) 100%), 
+      image('home-main-bg.jpg') no-repeat 50%/cover;
+    padding: 75px 0;
+    padding-bottom: 70px;
+    &__title {
+      color: $white;
+      margin-bottom: 35px;
+    }
+    &__note {
+      font-size: 1.8rem;
+      color: $white;
+      margin-bottom: 51px;
+      max-width: 720px;
+    }
+    &__btn {
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home {
+    &-main {
+      background: 
+      linear-gradient(-30deg, rgba($dark-100, .75) 0%, rgba($dark-blue, .75) 100%), 
+      image('m-home-main-bg.jpg') no-repeat 50%/cover;
+      padding: 35px 0;
+      padding-bottom: 40px;
+      &__title {
+        max-width: 400px;
+        margin-bottom: 26px;
+      }
+      &__note {
+        font-size: 1.4rem;
+        margin-bottom: 33px;
+        line-height: 1.57;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+}

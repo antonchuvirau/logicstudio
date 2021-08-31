@@ -53,16 +53,34 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/main';
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/title',
+  'components/our-works',
+  'components/price',
+  'components/website-order',
+  'components/advantages',
+  'components/menu',
+  'components/development-main',
+  'components/stages',
+  'components/about-advantages',
+  'components/about-specialization';
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/portfolio',
+  'pages/development',
+  'pages/about',
+  'pages/contacts',
+  'pages/service',
+  'pages/example';
 
 // 7. Themes
 @import
-  'themes/default';
+  'themes/default',
+  'themes/media';

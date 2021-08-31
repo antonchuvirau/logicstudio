@@ -1,0 +1,44 @@
+@media screen and (max-width: 992px) {
+  .instagram-link {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    padding: 0;
+    &::before {
+      width: 32px;
+      height: 32px;
+      left: auto;
+      right: 0;
+    }
+    &__wrapper {
+      @include flex(row, center, flex-end);
+    }
+  }
+  .company-info {
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .r-block {
+    &::before {
+      top: 29px;
+      width: 17px;
+      height: 2px;
+    }
+    &.price-item {
+      &::before {
+        width: 20px;
+        height: 4px;
+        top: 34px;
+      }
+    }
+  }
+  .more-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+}

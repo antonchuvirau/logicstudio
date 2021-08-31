@@ -1,0 +1,117 @@
+.our-works {
+  padding: 49px 0;
+  padding-bottom: 65px;
+  &__title {
+    color: $dark-200;
+    margin-bottom: 18px;
+  }
+  &__note {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    & span {
+      font-size: 2rem;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+  }
+  &__arrow-wrapper {
+    @include flex(row, flex-start, flex-end);
+  }
+  &__work {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 6px;
+    min-height: 370px;
+    padding: 40px;
+    box-sizing: border-box;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 185px;
+      background: linear-gradient(to bottom, rgba($black, .6) 0%, rgba($black, 0) 60%);
+      border-radius: 6px;
+    }
+    &-title {
+      text-transform: uppercase;
+      color: $white;
+      position: relative;
+      z-index: 1;
+    }
+    &-note {
+      color: $white;
+      font-size: 1.6rem;
+      margin: 0;
+      margin-top: 15px;
+      position: relative;
+      z-index: 1;
+    }
+    &-link {
+      color: $white;
+      font-size: 1.4rem;
+      line-height: 1.43;
+      margin: 0;
+      margin-top: 9px;
+      z-index: 1;
+      &_hidden {
+        visibility: hidden;
+      }
+    }
+  }
+  &__item {
+    &:nth-child(2n) {
+      margin-bottom: 40px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__all-link {
+    color: $dark-blue;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    margin-top: 15px;
+    padding-right: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-works {
+    padding: 26px 0;
+    padding-bottom: 30px;
+    &__title {
+      margin-top: 13px;
+    }
+    &__note {
+      font-size: 1.3rem;
+      line-height: 1.54;
+      margin-bottom: 20px;
+      & span {
+        font-size: 1.6rem;
+        line-height: 1.25;
+      }
+    }
+    &__item {
+      margin-bottom: 40px;
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
+    &__work {
+      min-height: 220px;
+      padding: 21px 24px;
+      &::after {
+        height: 111px;
+      }
+      &-note {
+        font-size: 1.3rem;
+        line-height: 1.54;
+      }
+    }
+  }
+}

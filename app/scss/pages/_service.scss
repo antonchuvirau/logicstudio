@@ -1,0 +1,64 @@
+.service {
+  & .price {
+    &-item {
+      &__wrapper {
+        margin-bottom: 40px;
+      }
+      &__price {
+        margin-bottom: 0;
+      }
+    }
+    &__title {
+      margin-bottom: 25px;
+      line-height: 1.35;
+    }
+    &__note {
+      min-width: 735px;
+    }
+  }
+  & .website-order {
+    &__title {
+      margin-top: 34px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .service {
+    & .price__note {
+      min-width: auto;
+    }
+    & .price-item__wrapper {
+      &:nth-child(5),
+      &:nth-child(6) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service {
+    & .price {
+      &-item__wrapper {
+        margin-bottom: 20px;
+        &:nth-child(5) {
+          margin-bottom: 20px;
+        }
+      }
+      &__title {
+        margin-bottom: 15px;
+        &_additional {
+          margin-top: 40px;
+        }
+      }
+      &__development {
+        margin-bottom: 30px;
+      }
+      &__note {
+        font-size: 1.3rem;
+        line-height: 1.54;
+      }
+    }
+  }
+}

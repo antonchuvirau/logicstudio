@@ -1,0 +1,63 @@
+.r-block {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 28px;
+    height: 4px;
+    background: $red-100;
+    z-index: 2;
+  }
+  &.price-item {
+    &::before {
+      top: 46px;
+    }
+  }
+}
+
+.more-link {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  font-weight: 600;
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 6px);
+    left: calc(100% + 16px);
+    width: 24px;
+    height: 12px;
+    background: icon('link-arrow.svg') no-repeat 50%;
+  }
+}
+
+.all-link {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 0;
+    width: 24px;
+    height: 10px;
+    background: icon('link-arrow.svg') no-repeat 50%;
+  }
+}
+
+.instagram-link {
+  position: relative;
+  padding-left: 40px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 14px);
+    width: 28px;
+    height: 28px;
+    background: icon('instagram.svg') no-repeat 50%;
+  }
+}
