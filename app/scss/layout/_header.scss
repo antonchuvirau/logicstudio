@@ -7,29 +7,27 @@
   border-bottom: 1px solid $gray-200;
   &__phone {
     font-size: 1.8rem;
+    line-height: 1.22;
     font-weight: 600;
     margin-left: auto;
+    &:hover {
+      opacity: .85;
+    }
   }
   &__logo {
     height: 100%;
     @include flex(row, center);
     margin-right: auto;
-    &:hover {
-      & svg path {
-        fill: $black;
-      } 
-    }
   }
   &__wrapper {
     position: relative;
-    padding: 30px 0;
+    padding: 34px 0;
   }
   &__menu {
-    margin: auto 0;
     margin-left: 49px;
     @include flex(row, center);
     &-wrapper {
-      @include flex();
+      @include flex(row, center);
     }
     &-text {
       margin: 0;
@@ -50,6 +48,9 @@
       &__text {
         margin: 0;
       }
+    }
+    &__wrapper {
+      padding: 31px 0;  
     }
   }
 }

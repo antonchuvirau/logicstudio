@@ -37,6 +37,12 @@
       background: linear-gradient(to bottom, rgba($black, .6) 0%, rgba($black, 0) 60%);
       border-radius: 6px;
     }
+    &:hover .our-works__work-link {
+      pointer-events: auto;
+      opacity: 1;
+      transform: none;
+      transition: transform .3s ease;
+    }
     &-title {
       text-transform: uppercase;
       color: $white;
@@ -59,7 +65,10 @@
       margin-top: 9px;
       z-index: 1;
       &_hidden {
-        visibility: hidden;
+        opacity: 0;
+        transform: translateY(5px);
+        transition: .3s all;
+        pointer-events: none;
       }
     }
   }

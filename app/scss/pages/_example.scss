@@ -28,6 +28,9 @@
     font-size: 1.6rem;
     line-height: 1.62;
     font-weight: 600;
+    &:hover {
+      opacity: .85;
+    }
   }
   &__image {
     box-shadow: 0 3px 15px rgba($black, .16);

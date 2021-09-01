@@ -25,7 +25,7 @@
   &::after {
     content: '';
     position: absolute;
-    top: calc(50% - 6px);
+    top: calc(50% - 5px);
     left: calc(100% + 16px);
     width: 24px;
     height: 12px;
@@ -59,5 +59,11 @@
     width: 28px;
     height: 28px;
     background: icon('instagram.svg') no-repeat 50%;
+  }
+  &:hover {
+    opacity: .85;
+    &::before {
+      opacity: .85;
+    }
   }
 }
