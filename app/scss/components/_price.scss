@@ -1,9 +1,9 @@
 .price {
   background: $gray-bg;
-  padding: 52px 0;
+  padding: 50px 0;
   padding-bottom: 60px;
   &__title {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     &_additional {
       margin-top: 20px;
     }
@@ -35,6 +35,7 @@
       margin: 0;
       margin-top: 23px;
       font-size: 1.6rem;
+      letter-spacing: .03em;
     }
     &__note {
       font-weight: 600;
@@ -43,6 +44,7 @@
       margin-top: 21px;
       font-size: 1.4rem;
       line-height: 1.43;
+      letter-spacing: .03em;
     }
     &__price {
       margin: 0;
@@ -52,9 +54,11 @@
       font-size: 2.6rem;
       line-height: 1.19;
       margin-bottom: 22px;
+      letter-spacing: .03em;
     }
     &__more-link {
       color: $dark-blue;
+      letter-spacing: .03em;
     }
   }
   &__all-link {

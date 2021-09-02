@@ -1,21 +1,25 @@
 .advantages {
   background: image('advantages-bg.jpg') no-repeat 50%;
   background-size: 100% 100%;
-  padding: 52px 0;
-  padding-bottom: 46px;
+  padding: 50px 0;
+  padding-bottom: 45px;
   color: $gray-300;
+
   &__title {
     color: $white;
     margin-bottom: 25px;
   }
+
   &__note {
     margin: 0;
     margin-bottom: 40px;
     font-size: 1.8rem;
   }
+
   &__item {
     @include flex(column);
     min-height: 172px;
+
     &-note {
       margin: 0;
       margin-top: auto;
@@ -23,13 +27,16 @@
       line-height: 1.62;
     }
   }
+
   &__items-wrapper {
     flex-wrap: nowrap;
     overflow: hidden;
   }
+
   &__pagination {
     @include flex(row, flex-start, center);
     margin-top: 20px;
+
     &-item {
       border-radius: 30px;
       width: 8px;
@@ -37,10 +44,12 @@
       box-sizing: border-box;
       border: 1px solid $white;
       margin-right: 15px;
+
       &_long {
         width: 36px;
         background: $white;
       }
+
       &:last-child {
         margin-right: 0;
       }
@@ -53,11 +62,13 @@
     &__title {
       margin-bottom: 15px;
     }
+
     &__note {
       font-size: 1.3rem;
       line-height: 1.54;
       margin-bottom: 21px;
     }
+
     &__item-note {
       font-size: 1.3rem;
       line-height: 1.54;

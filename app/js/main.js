@@ -1,23 +1,20 @@
 'use strict';
 
-//Показывает ссылку "Подробнее" на некоторых элементах
-const workLinks = document.querySelectorAll('.our-works__work');
+function onDocumentClickHandler(evt) {
+  const target = evt.target;
 
-workLinks.forEach(link => {
-  link.onpointerover = (evt) => {
-    const additionalNote = evt.target.querySelector('.our-works__work-link');
-    additionalNote.classList.remove('our-works__work-link_hidden');
-  };
-  link.onpointerleave = evt => {
-    const additionalNote = evt.target.querySelector('.our-works__work-link');
-    additionalNote.classList.add('our-works__work-link_hidden');
+  if (target.matches(`.header__menu-button-input`)) {
+    if (target.checked) {
+      const menu = document.querySelector('.menu');
+      menu.classList.add('menu_opened');
+      document.documentElement.classList.add(`is-locked`);
+    }
+    else {
+      const menu = document.querySelector('.menu');
+      menu.classList.remove('menu_opened');
+      document.documentElement.classList.remove(`is-locked`);
+    }
   }
-})
-
-//Открывает и закрывает меню
-const menu = document.querySelector('.menu');
-const toggleMenuBtn = document.querySelector('.header__menu');
-
-toggleMenuBtn.onclick = (evt) => {
-  menu.classList.toggle('menu_opened');
 }
+
+document.addEventListener(`click`, onDocumentClickHandler);

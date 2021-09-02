@@ -1,13 +1,12 @@
 .home {
   &-main {
-    background: 
-      linear-gradient(-30deg, rgba($dark-100, .75) 0%, rgba($dark-blue, .75) 100%), 
-      image('home-main-bg.jpg') no-repeat 50%/cover;
+    background: linear-gradient(-30deg, rgba($dark-100, .75) 0%, rgba($dark-blue, .75) 100%), image('home-main-bg.jpg') no-repeat 50%/cover;
     padding: 75px 0;
     padding-bottom: 70px;
     &__title {
       color: $white;
       margin-bottom: 35px;
+      max-width: 940px;
     }
     &__note {
       margin-bottom: 51px;
@@ -17,6 +16,7 @@
         margin: 0;
         margin-bottom: 15px;
         max-width: 720px;
+        letter-spacing: .03em;
         &:last-child {
           margin-bottom: 0;
         }
