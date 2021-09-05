@@ -1,23 +1,38 @@
 .our-works {
   padding: 49px 0;
   padding-bottom: 25px;
+
   &__title {
     color: $dark-200;
     margin-bottom: 18px;
   }
+
+  &__header {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__arrow-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
   &__note {
     margin: 0;
-    margin-bottom: 40px;
     font-size: 1.8rem;
+
     & span {
       font-size: 2rem;
       line-height: 1.5;
       font-weight: 700;
     }
   }
+
   &__arrow-wrapper {
     @include flex(row, flex-start, flex-end);
   }
+
   &__work {
     display: block;
     background-repeat: no-repeat;
@@ -27,6 +42,7 @@
     min-height: 370px;
     padding: 40px;
     box-sizing: border-box;
+
     &::after {
       content: '';
       position: absolute;
@@ -37,18 +53,21 @@
       background: linear-gradient(to bottom, rgba($black, .6) 0%, rgba($black, 0) 60%);
       border-radius: 6px;
     }
+
     &:hover .our-works__work-link {
       pointer-events: auto;
       opacity: 1;
       transform: none;
       transition: transform .3s ease;
     }
+
     &-title {
       text-transform: uppercase;
       color: $white;
       position: relative;
       z-index: 1;
     }
+
     &-note {
       color: $white;
       font-size: 1.6rem;
@@ -57,6 +76,7 @@
       position: relative;
       z-index: 1;
     }
+
     &-link {
       color: $white;
       font-size: 1.4rem;
@@ -64,6 +84,7 @@
       margin: 0;
       margin-top: 9px;
       z-index: 1;
+
       &_hidden {
         opacity: 0;
         transform: translateY(5px);
@@ -72,14 +93,12 @@
       }
     }
   }
+
   &__item {
-    &:nth-child(2n) {
-      margin-bottom: 40px;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
+    margin-bottom: 40px;
+    
   }
+
   &__all-link {
     color: $dark-blue;
     font-size: 1.4rem;
@@ -88,35 +107,53 @@
     padding-right: 36px;
   }
 }
-
+@media screen and (max-width: 991px) {
+  .our-works {
+    padding-bottom: 65px;
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   .our-works {
     padding: 26px 0;
     padding-bottom: 30px;
+
     &__title {
       margin-top: 13px;
     }
+
+    &__header {
+      margin-bottom: 20px;
+    }
+
     &__note {
       font-size: 1.3rem;
       line-height: 1.54;
-      margin-bottom: 20px;
+
       & span {
         font-size: 1.6rem;
         line-height: 1.25;
       }
     }
-    &__item {
-      margin-bottom: 40px;
-      &:nth-child(4) {
-        margin-bottom: 0;
-      }
-    }
+
+    // &__item {
+    //   margin-bottom: 40px;
+
+    //   &:nth-child(4) {
+    //     margin-bottom: 0;
+    //   }
+    // }
+
     &__work {
       min-height: 220px;
       padding: 21px 24px;
+
       &::after {
         height: 111px;
       }
+
       &-note {
         font-size: 1.3rem;
         line-height: 1.54;

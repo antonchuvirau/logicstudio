@@ -1,5 +1,6 @@
 .r-block {
   position: relative;
+
   &::before {
     content: '';
     position: absolute;
@@ -10,6 +11,7 @@
     background: $red-100;
     z-index: 2;
   }
+
   &.price-item {
     &::before {
       top: 46px;
@@ -22,6 +24,7 @@
   position: relative;
   margin: 0;
   font-weight: 600;
+
   &::after {
     content: '';
     position: absolute;
@@ -37,6 +40,7 @@
   display: inline-block;
   position: relative;
   font-weight: 600;
+
   &::after {
     content: '';
     position: absolute;
@@ -51,17 +55,25 @@
 .instagram-link {
   position: relative;
   padding-left: 40px;
+  &__wrapper {
+    @include flex(row, center, flex-end);
+  }
+
   &::before {
     content: '';
     position: absolute;
     left: 0;
-    top: calc(50% - 14px);
+    top: 50%;
     width: 28px;
     height: 28px;
+    margin-top: -14px;
+    // margin-left: -14px;
     background: icon('instagram.svg') no-repeat 50%;
   }
+
   &:hover {
     opacity: .85;
+
     &::before {
       opacity: .85;
     }

@@ -41,9 +41,11 @@
         margin-bottom: 26px;
       }
       &__note {
-        font-size: 1.4rem;
+        & p {
+          font-size: 1.4rem;
+          line-height: 1.57;
+        }
         margin-bottom: 33px;
-        line-height: 1.57;
       }
     }
   }

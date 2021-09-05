@@ -7,8 +7,8 @@
     &::before {
       width: 32px;
       height: 32px;
-      left: auto;
-      right: 0;
+      margin-top: -16px;
+      margin-left: -16px;
     }
     &__wrapper {
       @include flex(row, center, flex-end);
@@ -30,7 +30,7 @@
       &::before {
         width: 20px;
         height: 4px;
-        top: 34px;
+        top: 31px;
       }
     }
   }

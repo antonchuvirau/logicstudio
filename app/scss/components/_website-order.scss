@@ -1,7 +1,7 @@
 .website-order {
   padding: 52px 0;
   padding-bottom: 67px;
-  background: $gray-bg;
+  background: linear-gradient(45deg, $gray-bg, $gray-200);
 
   &__title {
     margin-bottom: 34px;
@@ -13,6 +13,7 @@
       line-height: 1.22;
       color: $dark-100;
       margin-top: 5px;
+      letter-spacing: normal;
 
       &:first-child {
         margin-top: 0;
