@@ -1,20 +1,30 @@
 .portfolio {
   padding: 40px 0;
+
   &__title {
-    margin-bottom: 36px;
+    margin-bottom: 40px;
     font-weight: 700;
   }
+
   &__show {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
   }
 }
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .portfolio {
     &__show {
-      margin-top: 40px;
+      // margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding-top: 25px;
+    &__title {
+      margin-bottom: 25px;
+      margin-top: 0;
     }
   }
 }

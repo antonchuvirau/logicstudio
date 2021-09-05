@@ -13,7 +13,7 @@
   }
   &__arrow-link {
     position: absolute;
-    right: 0;
+    right: 15px;
     bottom: 0;
     z-index: 1;
   }
@@ -103,7 +103,7 @@
     color: $dark-blue;
     font-size: 1.4rem;
     line-height: 1.43;
-    margin-top: 15px;
+    // margin-top: 15px;
     padding-right: 36px;
   }
 }

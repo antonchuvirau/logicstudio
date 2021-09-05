@@ -20,12 +20,12 @@
   .development {
     & .price {
       padding-bottom: 34px;
-      &-item {
-        &__wrapper:nth-child(5),
-        &__wrapper:nth-child(6) {
-          margin-bottom: 0;
-        }
-      }
+      // &-item {
+      //   &__wrapper:nth-child(5),
+      //   &__wrapper:nth-child(6) {
+      //     margin-bottom: 0;
+      //   }
+      // }
     }
   }
 }
@@ -36,12 +36,12 @@
       &-item {
         &__wrapper {
           margin-bottom: 20px;
-          &:nth-child(5) {
-            margin-bottom: 20px;
-          }
-          &:nth-child(6) {
-            margin-bottom: 0;
-          }
+          // &:nth-child(5) {
+          //   margin-bottom: 20px;
+          // }
+          // &:nth-child(6) {
+          //   margin-bottom: 0;
+          // }
         }
       }
       &__title {

@@ -55,6 +55,7 @@
 .instagram-link {
   position: relative;
   padding-left: 40px;
+
   &__wrapper {
     @include flex(row, center, flex-end);
   }

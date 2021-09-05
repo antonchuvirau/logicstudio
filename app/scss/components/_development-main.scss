@@ -1,17 +1,20 @@
 .development-main {
-  background: 
-    linear-gradient(-30deg, rgba($dark-100, .75) 0%, rgba($dark-blue, .75) 100%), 
+  background:
+    linear-gradient(-30deg, rgba($dark-100, .75) 0%, rgba($dark-blue, .75) 100%),
     image('development-bg.jpg') no-repeat 50% 0;
   background-size: cover;
   padding: 75px 0;
   padding-bottom: 70px;
+
   &__title {
     color: $white;
     margin-bottom: 43px;
   }
+
   &__list {
     margin-bottom: 62px;
   }
+
   &__item {
     position: relative;
     color: $white;
@@ -20,6 +23,7 @@
     font-weight: 600;
     padding-left: 42px;
     margin: 0;
+
     &::before {
       content: '';
       position: absolute;
@@ -29,6 +33,7 @@
       height: 20px;
       background: icon('big-swush.svg') no-repeat 50%;
     }
+
     &-text {
       margin: 0;
     }
@@ -39,6 +44,7 @@
   .development-main {
     &__item {
       margin-bottom: 22px;
+
       &_last {
         margin-bottom: 0;
       }
@@ -48,17 +54,20 @@
 
 @media screen and (max-width: 767px) {
   .development-main {
-    background: 
-      linear-gradient(rgba($dark-100, .75) 0%, rgba($dark-100, .75) 100%), 
+    background:
+      linear-gradient(rgba($dark-100, .75) 0%, rgba($dark-100, .75) 100%),
       image('m-home-main-bg.jpg') no-repeat 50%/cover;
-      padding: 35px 0;
-      padding-bottom: 40px;
+    padding: 35px 0;
+    padding-bottom: 40px;
+
     &__title {
       margin-bottom: 17px;
     }
+
     &__list {
       margin-bottom: 28px;
     }
+
     &__item {
       font-size: 1.4rem;
       line-height: 1.36;
@@ -66,6 +75,7 @@
       padding-left: 29px;
       max-width: 200px;
       box-sizing: content-box;
+
       &::before {
         content: '';
         position: absolute;
@@ -75,8 +85,10 @@
         height: 18px;
         background: icon('swush.svg') no-repeat 50%;
       }
+
       &-text {
         margin-bottom: 22px;
+
         &:last-child {
           margin-bottom: 0;
         }

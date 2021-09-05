@@ -82,7 +82,7 @@
 	}
 
 	&-menu {
-		@include flex(row);
+		// @include flex(row);
 
 		&__col {
 			@include flex(column);

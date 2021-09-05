@@ -86,9 +86,14 @@
       margin-bottom: 21px;
     }
 
-    &__item-note {
-      font-size: 1.3rem;
-      line-height: 1.54;
+    &__item {
+      &-icon {
+        max-height: 50px;
+      }
+      &-note {
+        font-size: 1.3rem;
+        line-height: 1.54;
+      }
     }
   }
 }
