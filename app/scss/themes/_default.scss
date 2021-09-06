@@ -30,9 +30,11 @@
     position: absolute;
     top: calc(50% - 5px);
     left: calc(100% + 16px);
-    width: 24px;
-    height: 12px;
-    background: icon('link-arrow.svg') no-repeat 50%;
+    width: 26px;
+    height: 13px;
+    background: icon('link-arrow.svg') no-repeat 50% / 25px auto;
+    transition: transform .25s ease;
+    will-change: transform;
   }
 }
 

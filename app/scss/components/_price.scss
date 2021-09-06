@@ -71,6 +71,13 @@
       color: $dark-blue;
       letter-spacing: .03em;
     }
+    &:hover {
+      & .more-link {
+        &::after {
+          transform: translateX(-8px);
+        }
+      }
+    }
   }
 
   &__all-link {

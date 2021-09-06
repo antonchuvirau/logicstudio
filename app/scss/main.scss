@@ -41,7 +41,8 @@
 
 // 2. Vendors
 @import
-  'vendors/normalize';
+  'vendors/normalize',
+  'vendors/jquerymodal';
 
 // 3. Base stuff
 @import
@@ -68,7 +69,9 @@
   'components/development-main',
   'components/stages',
   'components/about-advantages',
-  'components/about-specialization';
+  'components/about-specialization',
+  'components/modal',
+  'components/form';
 
 // 6. Page-specific styles
 @import

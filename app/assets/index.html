@@ -15,6 +15,7 @@
 	<link rel="icon" type="image/png" href="" sizes="96x96">
 	<link rel="apple-touch-icon" sizes="152x152" href="">
 	<!-- favicon -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<link href="css/application.css" rel="stylesheet">
 </head>
 
@@ -94,7 +95,7 @@
 						в&nbsp;стратегии рекламных кампаний и&nbsp;сопровождении проектов.
 					</p>
 				</div>
-				<button class="btn btn-submit home-main__btn">Оставить заявку</button>
+				<button data-modal="#callback-modal" class="btn btn-submit home-main__btn">Оставить заявку</button>
 			</div>
 		</section>
 		<section class="our-works">
@@ -107,38 +108,51 @@
 				<div class="our-works__wrapper">
 					<div class="row">
 						<div class="col-12 col-lg-6 our-works__item">
-							<a href="portfolio-example.html" class="our-works__work r-block"
-								style="background-image: url('./img/4cb2372831eafdf87be6c5d708f49483@2x.jpg')">
-								<h3 class="title title_size-s our-works__work-title">Constructor group</h3>
-								<p class="our-works__work-note">Разработка и поддержка сайта </br>строительной компании
-								</p>
-								<p class="our-works__work-link more-link our-works__work-link_hidden">Подробнее</p>
+							<a href="portfolio-example.html" class="our-works__work r-block">
+								<div class="our-works__work-img">
+									<img src="./img/4cb2372831eafdf87be6c5d708f49483@2x.jpg" alt="alt">
+								</div>
+								<div class="our-works__work-content">
+									<h3 class="title title_size-s our-works__work-title">Constructor group</h3>
+									<p class="our-works__work-note">Разработка и поддержка сайта </br>строительной компании</p>
+									<p class="our-works__work-link more-link our-works__work-link_hidden">Подробнее</p>
+								</div>
 							</a>
 						</div>
 						<div class="col-12 col-lg-6 our-works__item">
-							<a href="#" class="our-works__work r-block"
-								style="background-image: url('./img/XXL@2x.jpg')">
-								<h3 class="title title_size-s our-works__work-title">Rentakran</h3>
-								<p class="our-works__work-note">Разработка сайта для лидера </br>аренды строительной
-									техники</p>
-								<p class="our-works__work-link more-link our-works__work-link_hidden">Подробнее</p>
+							<a href="#" class="our-works__work r-block">
+								<div class="our-works__work-img">
+									<img src="./img/XXL@2x.jpg" alt="alt">
+								</div>
+								<div class="our-works__work-content">
+									<h3 class="title title_size-s our-works__work-title">Rentakran</h3>
+									<p class="our-works__work-note">Разработка сайта для лидера </br>аренды строительной техники</p>
+									<p class="our-works__work-link more-link our-works__work-link_hidden">Подробнее</p>
+								</div>
 							</a>
 						</div>
 						<div class="col-12 col-lg-6 our-works__item">
-							<a href="#" class="our-works__work r-block"
-								style="background-image: url('./img/red-prev-540@2x.jpg')">
-								<h3 class="title title_size-s our-works__work-title">Доставка букетов №1</h3>
-								<p class="our-works__work-note">Разработка сайта интернет-магазина </br>по доставке
-									цветов и подарков</p>
-								<p class="our-works__work-link more-link our-works__work-link_hidden">Подробнее</p>
+							<a href="#" class="our-works__work r-block">
+								<div class="our-works__work-img">
+									<img src="./img/red-prev-540@2x.jpg" alt="alt">
+								</div>
+								<div class="our-works__work-content">
+									<h3 class="title title_size-s our-works__work-title">Доставка букетов №1</h3>
+									<p class="our-works__work-note">Разработка сайта интернет-магазина </br>по доставке цветов и подарков</p>
+									<p class="our-works__work-link more-link our-works__work-link_hidden">Подробнее</p>
+								</div>
 							</a>
 						</div>
 						<div class="col-12 col-lg-6 our-works__item">
-							<a href="#" class="our-works__work r-block"
-								style="background-image: url('./img/food-shop@2x.jpg')">
-								<h3 class="title title_size-s our-works__work-title">Crown food</h3>
-								<p class="our-works__work-note">Разработка интернет-магазина </br>готовой кулинарии</p>
-								<p class="our-works__work-link more-link our-works__work-link_hidden">Подробнее</p>
+							<a href="#" class="our-works__work r-block">
+								<div class="our-works__work-img">
+									<img src="./img/food-shop@2x.jpg" alt="alt">
+								</div>
+								<div class="our-works__work-content">
+									<h3 class="title title_size-s our-works__work-title">Crown food</h3>
+									<p class="our-works__work-note">Разработка интернет-магазина </br>готовой кулинарии</p>
+									<p class="our-works__work-link more-link our-works__work-link_hidden">Подробнее</p>
+								</div>
 							</a>
 						</div>
 						<div class="col-12 d-lg-none">
@@ -391,7 +405,35 @@
 	</footer>
 	<!-- End footer -->
 	<!-- Begin modal -->
-	<div class="modal"></div>
+	<div id="callback-modal" class="modal callback-modal">
+		<div class="modal__grid">
+			<img class="modal__icon" src="./img/logo.svg" alt="Logic studio logo">
+			<form class="form modal__form">
+				<div class="form__row">
+					<label class="form__label">Представьтесь <span class="form__label-note">*</span></label>
+					<input class="form__input" type="text" name="name">
+				</div>
+				<div class="form__row">
+					<label class="form__label">Телефон <span class="form__label-note">*</span></label>
+					<input class="form__input" placeholder="+7(___)___-__-__" type="tel" name="tel">
+				</div>
+				<div class="form__row">
+					<label class="form__label">E-mail <span class="form__label-note">*</span></label>
+					<input class="form__input" type="email" name="email">
+				</div>
+				<!-- Заменить на type="submit" и удалить  data-modal="#success-modal" -->
+				<button type="button" data-modal="#success-modal" class="btn btn-submit form__btn">Оставить заявку</button>
+			</form>
+		</div>
+	</div>
+	<div id="success-modal" class="modal success-modal">
+		<div class="modal__grid">
+			<img class="modal__icon modal__icon_align-center" src="./img/logo.svg" alt="Logic studio logo">
+			<div class="modal__content">
+				<p>Ваше сообщение успешно отправлено. Мы&nbsp;свяжемся&nbsp;с вами в ближайшее время. Благодарим&nbsp;за&nbsp;обращение!</p>
+			</div>
+		</div>
+	</div>
 	<!-- End modal -->
 	<!-- BEGIN scripts -->
 	<script src="js/application.js"></script>
