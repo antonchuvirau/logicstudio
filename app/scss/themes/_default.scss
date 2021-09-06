@@ -4,12 +4,12 @@
   &::before {
     content: '';
     position: absolute;
-    top: 52px;
+    top: 50px;
     left: 0;
     width: 28px;
     height: 4px;
     background: $red-100;
-    z-index: 2;
+    z-index: 3;
   }
 
   &.price-item {
@@ -29,7 +29,7 @@
     content: '';
     position: absolute;
     top: calc(50% - 5px);
-    left: calc(100% + 16px);
+    left: calc(100% + 8px);
     width: 26px;
     height: 13px;
     background: icon('link-arrow.svg') no-repeat 50% / 25px auto;
@@ -50,7 +50,7 @@
     right: 0;
     width: 24px;
     height: 10px;
-    background: icon('link-arrow.svg') no-repeat 50%;
+    background: icon('link-arrow.svg') no-repeat 50% / 23px auto;
   }
 }
 
