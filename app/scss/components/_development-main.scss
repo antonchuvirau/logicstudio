@@ -1,6 +1,6 @@
 .development-main {
   background:
-    linear-gradient(-30deg, rgba($dark-100, .75) 0%, rgba($dark-blue, .75) 100%),
+    linear-gradient(-30deg, rgba($dark-100, .55) 0%, rgba($dark-blue, .55) 100%),
     image('development-bg.jpg') no-repeat 50% 0;
   background-size: cover;
   padding: 75px 0;
@@ -19,7 +19,7 @@
     position: relative;
     color: $white;
     font-size: 2.2rem;
-    line-height: 1.63;
+    line-height: 1.8;
     font-weight: 600;
     padding-left: 42px;
     margin: 0;
