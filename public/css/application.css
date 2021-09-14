@@ -4733,8 +4733,8 @@ a {
       padding: 38px 15px; } }
 
 .development-main {
-  background: -o-linear-gradient(120deg, rgba(30, 54, 62, 0.75) 0%, rgba(33, 77, 93, 0.75) 100%), url("../img/development-bg.jpg") no-repeat 50% 0;
-  background: linear-gradient(-30deg, rgba(30, 54, 62, 0.75) 0%, rgba(33, 77, 93, 0.75) 100%), url("../img/development-bg.jpg") no-repeat 50% 0;
+  background: -o-linear-gradient(120deg, rgba(30, 54, 62, 0.55) 0%, rgba(33, 77, 93, 0.55) 100%), url("../img/development-bg.jpg") no-repeat 50% 0;
+  background: linear-gradient(-30deg, rgba(30, 54, 62, 0.55) 0%, rgba(33, 77, 93, 0.55) 100%), url("../img/development-bg.jpg") no-repeat 50% 0;
   background-size: cover;
   padding: 75px 0;
   padding-bottom: 70px; }
@@ -5074,8 +5074,8 @@ a {
     line-height: 1.2; } }
 
 .home-main {
-  background: -o-linear-gradient(120deg, rgba(30, 54, 62, 0.75) 0%, rgba(33, 77, 93, 0.75) 100%), url("../img/home-main-bg.jpg") no-repeat 50%/cover;
-  background: linear-gradient(-30deg, rgba(30, 54, 62, 0.75) 0%, rgba(33, 77, 93, 0.75) 100%), url("../img/home-main-bg.jpg") no-repeat 50%/cover;
+  background: -o-linear-gradient(120deg, rgba(30, 54, 62, 0.55) 0%, rgba(33, 77, 93, 0.55) 100%), url("../img/home-main-bg.jpg") no-repeat 50%/cover;
+  background: linear-gradient(-30deg, rgba(30, 54, 62, 0.55) 0%, rgba(33, 77, 93, 0.55) 100%), url("../img/home-main-bg.jpg") no-repeat 50%/cover;
   padding: 75px 0;
   padding-bottom: 70px; }
   .home-main__title {
@@ -5088,8 +5088,9 @@ a {
       font-size: 1.8rem;
       color: #FFF;
       margin: 0;
+      font-weight: 500;
       margin-bottom: 15px;
-      max-width: 720px;
+      max-width: 730px;
       letter-spacing: .03em; }
       .home-main__note p:last-child {
         margin-bottom: 0; }
