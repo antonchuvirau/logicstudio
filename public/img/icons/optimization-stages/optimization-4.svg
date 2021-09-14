@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80.635" height="63.982" viewBox="0 0 80.635 63.982">
+  <g id="Group_19" data-name="Group 19" transform="translate(0.535 -14.836)">
+    <circle id="ellipse124" cx="2" cy="2" r="2" transform="translate(70.432 25.158) rotate(-90)" fill="#ff023d"/>
+    <circle id="ellipse126" cx="2" cy="2" r="2" transform="translate(63.432 25.158) rotate(-90)" fill="#ff023d"/>
+    <circle id="ellipse128" cx="2" cy="2" r="2" transform="translate(56.432 25.158) rotate(-90)" fill="#ff023d"/>
+    <path id="path130" d="M124.524-37.8l18.609-15.49,4.237,4.656,20.176-17.286" transform="translate(-108.309 97.095)" fill="none" stroke="#ff023d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2" fill-rule="evenodd"/>
+    <path id="path132" d="M164.522-66.475H171V-60" transform="translate(-111.305 97.137)" fill="none" stroke="#ff023d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2" fill-rule="evenodd"/>
+    <rect id="rect134" width="10.177" height="10.184" rx="1.199" transform="translate(28.218 59.312)" fill="none" stroke="#ff023d" stroke-miterlimit="79.84" stroke-width="2"/>
+    <rect id="rect136" width="10.177" height="14.801" rx="0.824" transform="translate(43.945 54.692)" fill="none" stroke="#ff023d" stroke-miterlimit="79.84" stroke-width="2"/>
+    <rect id="rect138" width="10.177" height="25.886" rx="0.471" transform="translate(59.672 43.598)" fill="none" stroke="#ff023d" stroke-miterlimit="79.84" stroke-width="2"/>
+    <rect id="rect140" width="10.177" height="4.648" rx="2.324" transform="translate(12.491 64.858)" fill="none" stroke="#ff023d" stroke-miterlimit="79.84" stroke-width="2"/>
+    <path id="path142" d="M126.523-70.476v11.1" transform="translate(-108.459 97.436)" fill="none" stroke="#ff023d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2" fill-rule="evenodd"/>
+    <path id="path144" d="M131.624-64.475h-11.1" transform="translate(-108.009 96.987)" fill="none" stroke="#ff023d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2" fill-rule="evenodd"/>
+    <path id="path146" d="M182.95-20.519a3.186,3.186,0,0,0,3.184-3.184V-79.317A3.186,3.186,0,0,0,182.95-82.5H110.683a3.186,3.186,0,0,0-3.184,3.184V-23.7a3.186,3.186,0,0,0,3.184,3.184Z" transform="translate(-107.034 98.337)" fill="none" stroke="#ff023d" stroke-miterlimit="79.84" stroke-width="2" fill-rule="evenodd"/>
+  </g>
+</svg>

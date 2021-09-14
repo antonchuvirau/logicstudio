@@ -2,7 +2,7 @@
   padding: 49px 0;
   padding-bottom: 58px;
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   &__note {
     margin: 0;
@@ -18,7 +18,7 @@
       margin-bottom: 0;
     }
     &-icon {
-      margin-bottom: 6px;
+      margin-bottom: 12px;
     }
     &-title {
       color: $dark-200;
@@ -53,7 +53,7 @@
     }
     &__item {
       &-title {
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
       }
       &-note {
         font-size: 1.3rem;
@@ -66,7 +66,7 @@
 @media screen and (max-width: 576px) {
   .sup-stages {
     &__title {
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
     }
     &__item {
       margin-bottom: 15px;
