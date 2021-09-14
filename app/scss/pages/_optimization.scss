@@ -1,3 +1,22 @@
 .optimization {
-  
+  & .price-item {
+    height: auto;
+    padding-right: 21px;
+    &__price {
+      margin-bottom: 6px;
+    }
+    &__note {
+      margin-top: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .optimization {
+    & .price-item {
+      &__price {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

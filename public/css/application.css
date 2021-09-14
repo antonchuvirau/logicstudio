@@ -5410,6 +5410,18 @@ a {
         margin: 25px 0;
         margin-bottom: 40px; } }
 
+.optimization .price-item {
+  height: auto;
+  padding-right: 21px; }
+  .optimization .price-item__price {
+    margin-bottom: 6px; }
+  .optimization .price-item__note {
+    margin-top: 18px; }
+
+@media screen and (max-width: 767px) {
+  .optimization .price-item__price {
+    margin-bottom: 0; } }
+
 .r-block {
   position: relative; }
   .r-block::before {
