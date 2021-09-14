@@ -71,7 +71,8 @@
   'components/about-advantages',
   'components/about-specialization',
   'components/modal',
-  'components/form';
+  'components/form',
+  'components/optimization-main';
 
 // 6. Page-specific styles
 @import
@@ -81,7 +82,9 @@
   'pages/about',
   'pages/contacts',
   'pages/service',
-  'pages/example';
+  'pages/example',
+  'pages/optimization',
+  'pages/support';
 
 // 7. Themes
 @import

@@ -4747,7 +4747,7 @@ a {
     position: relative;
     color: #FFF;
     font-size: 2.2rem;
-    line-height: 1.63;
+    line-height: 1.8;
     font-weight: 600;
     padding-left: 42px;
     margin: 0; }
@@ -5072,6 +5072,71 @@ a {
   .form__label {
     font-size: 1.6rem;
     line-height: 1.2; } }
+
+.optimization-main {
+  background: -webkit-gradient(linear, left top, right top, from(#F8F9F9), to(#E9EDEE));
+  background: -o-linear-gradient(left, #F8F9F9, #E9EDEE);
+  background: linear-gradient(to right, #F8F9F9, #E9EDEE);
+  padding: 75px 0;
+  padding-bottom: 70px; }
+  .optimization-main__title {
+    color: #233F48;
+    margin-bottom: 45px; }
+  .optimization-main__list {
+    margin-bottom: 62px; }
+  .optimization-main__item {
+    position: relative;
+    color: #233F48;
+    font-size: 2rem;
+    line-height: 1.63;
+    font-weight: 600;
+    padding-left: 42px;
+    margin: 0; }
+    .optimization-main__item::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 26px;
+      height: 20px;
+      background: url("../img/icons/big-swush.svg") no-repeat 50%; }
+    .optimization-main__item-text {
+      margin: 0; }
+
+@media screen and (max-width: 991px) {
+  .optimization-main__item {
+    margin-bottom: 22px; }
+    .optimization-main__item_last {
+      margin-bottom: 0; } }
+
+@media screen and (max-width: 767px) {
+  .optimization-main {
+    padding: 35px 0;
+    padding-bottom: 40px; }
+    .optimization-main__title {
+      margin-bottom: 17px; }
+    .optimization-main__list {
+      margin-bottom: 28px; }
+    .optimization-main__item {
+      font-size: 1.4rem;
+      line-height: 1.36;
+      font-weight: 500;
+      padding-left: 29px;
+      max-width: 200px;
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box; }
+      .optimization-main__item::before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        background: url("../img/icons/swush.svg") no-repeat 50%; }
+      .optimization-main__item-text {
+        margin-bottom: 22px; }
+        .optimization-main__item-text:last-child {
+          margin-bottom: 0; } }
 
 .home-main {
   background: -o-linear-gradient(120deg, rgba(30, 54, 62, 0.55) 0%, rgba(33, 77, 93, 0.55) 100%), url("../img/home-main-bg.jpg") no-repeat 50%/cover;
