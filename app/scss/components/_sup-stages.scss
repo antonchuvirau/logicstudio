@@ -4,6 +4,13 @@
   &__title {
     margin-bottom: 20px;
   }
+  &__note {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    max-width: 770px;
+    margin-bottom: 42px;
+  }
   &__item {
     margin-bottom: 21px;
     &:nth-child(3),
@@ -39,6 +46,11 @@
 @media screen and (max-width: 767px) {
   .sup-stages {
     padding: 35px 0;
+    &__note {
+      font-size: 1.3rem;
+      line-height: 1.54;
+      margin-bottom: 20px;
+    }
     &__item {
       &-title {
         margin-bottom: 10px;
