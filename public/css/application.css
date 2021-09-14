@@ -5211,6 +5211,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .home-main {
+    background: -o-linear-gradient(120deg, rgba(30, 54, 62, 0.55) 0%, rgba(33, 77, 93, 0.55) 100%), url("../img/m-home-main-bg.jpg") no-repeat 50%/cover;
+    background: linear-gradient(-30deg, rgba(30, 54, 62, 0.55) 0%, rgba(33, 77, 93, 0.55) 100%), url("../img/m-home-main-bg.jpg") no-repeat 50%/cover;
     padding: 35px 0;
     padding-bottom: 40px; }
     .home-main__title {
