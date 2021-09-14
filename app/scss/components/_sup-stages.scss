@@ -17,8 +17,20 @@
     &:last-child {
       margin-bottom: 0;
     }
+    &:first-child {
+      & .sup-stages {
+        &__item {
+          &-icon {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
     &-icon {
       margin-bottom: 12px;
+      &_support {
+        margin-bottom: 8px;
+      }
     }
     &-title {
       color: $dark-200;

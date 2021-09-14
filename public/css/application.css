@@ -5150,8 +5150,12 @@ a {
     margin-bottom: 21px; }
     .sup-stages__item:nth-child(3), .sup-stages__item:last-child {
       margin-bottom: 0; }
+    .sup-stages__item:first-child .sup-stages__item-icon {
+      margin-bottom: 10px; }
     .sup-stages__item-icon {
       margin-bottom: 12px; }
+      .sup-stages__item-icon_support {
+        margin-bottom: 8px; }
     .sup-stages__item-title {
       color: #233F48;
       margin-bottom: 18px; }
